@@ -21,10 +21,12 @@
   args:
     chdir: /app  
 
+
 - name: systemd setup
   ansible.builtin.import_role:
     name: common
-    tasks_from: systemd-setup.
+    tasks_from: systemd-setup.yaml
+
     
 - name: install dependencies 
   ansible.builtin.pip:
@@ -47,6 +49,7 @@
   - /app/db/schema.sql
   - /app/db/app-user.sql 
   - /app/db/master-data.sql
+
 
 
 - name: start shipping
