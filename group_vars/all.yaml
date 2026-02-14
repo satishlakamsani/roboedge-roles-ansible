@@ -1,0 +1,11 @@
+ansible_user: ec2-user
+ansible_password: DevOps321
+MONGODB_HOST: mongodb-dev.pugasaha.online
+CATALOGUE_HOST: catalogue-dev.pugasaha.online
+REDIS_HOST: redis-dev.pugasaha.online
+USER_HOST: user-dev.pugasaha.online
+CART_HOST: cart-dev.pugasaha.online
+MYSQL_HOST: mysql-dev.pugasaha.online
+SHIPPING_HOST: shipping-dev.pugasaha.online
+RABBITMQ_HOST: rabbitmq-dev.pugasaha.online
+PAYMENT_HOST: payment-dev.pugasaha.online
