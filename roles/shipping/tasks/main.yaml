@@ -1,0 +1,33 @@
+- name: app setup
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: app-setup.yaml
+
+- name: install maven and mysql
+  ansible.builtin.dnf:
+    name: "{{item}}"
+    state: present
+  loop:
+  - maven
+  - mysql
+
+- name: install dependencies
+  ansible.builtin.command: mvn clean package
+  args:
+    chdir: /app
+
+- name: install dependencies
+  ansible.builtin.command: mv target/shipping-1.0.jar shipping.jar
+  args:
+    chdir: /app  
+
+- name: systemd setup
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: systemd-setup.yaml
+
+- name: start shipping
+  ansible.builtin.service:
+    name: shipping
+    state: restarted
+    enabled: yes
