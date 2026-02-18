@@ -4,7 +4,7 @@
    name: common 
   
    tasks_from: import-vs-include.yaml
-  when: os == "debian"
-  #loop:
-  #- Ramesh
-  #- Suresh
+  #when: os == "debian"
+  loop:
+  - Ramesh
+  - Suresh
