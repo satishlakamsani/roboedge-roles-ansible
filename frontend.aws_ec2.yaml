@@ -3,4 +3,7 @@ region:
 - us-east-1
 hostnames:
 - private-ip-address
-- dns-name
+
+filters:
+  instance-state-name : running
+  tag:Name: frontend-dev
