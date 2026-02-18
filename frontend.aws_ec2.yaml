@@ -3,3 +3,4 @@ region:
 - us-east-1
 hostnames:
 - private-ip-address
+- dns-name
