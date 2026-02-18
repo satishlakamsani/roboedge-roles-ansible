@@ -1,10 +1,10 @@
 - name: call common role
-  #ansible.builtin.import_role:
-  ansible.builtin.include_role:
+  ansible.builtin.import_role:
+  #ansible.builtin.include_role:
    name: common 
   
    tasks_from: import-vs-include.yaml
-  #when: os == "debian"
+  when: os == "debian"
   loop:
   - Ramesh
   - Suresh
