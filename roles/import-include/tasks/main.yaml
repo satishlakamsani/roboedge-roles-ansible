@@ -5,6 +5,6 @@
   
    tasks_from: import-vs-include.yaml
   when: os == "debian"
-  loop:
-  - Ramesh
-  - Suresh
+  #loop:
+  #- Ramesh
+  #- Suresh
