@@ -4,7 +4,7 @@
    name: common 
   
    tasks_from: import-vs-include.yaml
-  when: os == "debian"
+  when: os == "RedHat"
   #loop:
   #- Ramesh
   #- Suresh
