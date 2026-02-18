@@ -4,6 +4,6 @@
   
    tasks_from: import-vs-include.yaml
   when: os == "RedHat"
-  loop:
-  - Ramesh
-  - Suresh
+  #loop:
+  #- Ramesh
+  #- Suresh
