@@ -16,3 +16,8 @@ compose:
 #- separator: ''
   # name of the group is frontend
   #key: tags.Name | regex_replace('-.*$', '') 
+
+keyed_groups:
+- separator: ''
+  # name of the group is frontend
+  key: tags.Name | regex_replace('-.*$', '')
